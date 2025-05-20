@@ -15,3 +15,17 @@ spring:
       on-profile: test
 server:
   port: 9000
+---
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/flashcards_db
+    username: flashcard_admin
+    password: minhasenhaforte
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
