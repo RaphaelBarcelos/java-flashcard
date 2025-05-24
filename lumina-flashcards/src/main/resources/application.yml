@@ -34,3 +34,7 @@ app:
   jwt:
     secret: 'O9pZqBHUR1HeMYIRgoMWUOHSmRMhDfJVAOcld1NKy9Ah8jtRrnjkm4WMYHeUZJnQ'
     expirationMs: 86400000
+---
+logging:
+  level:
+    org.springframework.security: DEBUG
